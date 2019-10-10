@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body,.wrap{
+    width: 100%;
+}
+.center{
+    width: 1200px;
+    margin: 0 auto;
+}
+.wrap>div,.wrap>div>div{
+    width: 100%;
+}
+/* 清除浮动 */
+.clearFlaot:after{
+   contain: "";
+   display: block;
+   visibility: hidden;
+   height: 0;
+   clear: both;
+}
+.clearFlaot{
+    zoom: 1;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* **************** */
+.head{
+    width: 100%;
+    background-color: #3B4348;
+}
+.head > .nav{
+    font-size: 13px;
+    padding: 15px 0 ;
+    height: 25px;
+    border-bottom: 1px solid #525d64;
+}
+.head > .nav .call{
+    float: left;
+}
+.head > .nav .call li{
+    float: left;
+    margin-right: 30px;
+}
+.head > .nav .call li a{
+    display: block;
+    
+}
+.head > .nav .call li a >div{
+    float: left;
+    padding: 6px;
+    background-color: #39b0ff;
+    margin-right: 10px;
+}
+.head > .nav .call li a >div >i{
+   display: block;
+   width: 13px;
+   height: 13px;
+   background-repeat: no-repeat;
+   background-size: 100%
+   
+}
+.head > .nav .call li:nth-child(1) a >div >i{
+    background-image: url('img/head/icon/xinfeng-0.png');
+}
+.head > .nav .call li:nth-child(2) a >div >i{
+    background-image: url('img/head/icon/dianhua-0.png');
+}
+.head > .nav .call li a > h6{
+    float: left;
+    color: white;
+    line-height: 25px;
+    margin-right: 5px;
+    
+}
+.head > .nav .call li a > span{
+    float: left;
+    color: #bfbfbf;
+    line-height: 25px;
+}
+.head > .nav .call li a:hover >h6{
+    color: #73b320;
+    transition: 1s;
+}
+.head > .nav .call li a:hover >span{
+    color: #fff;
+    transition: 1s;
+}
+.head > .nav .call li a:hover >div{
+    background-color: #fff;
+    transition: 1s;
+}
+.head > .nav .call li:nth-child(1) a:hover div >i{
+    background-image: url('img/head/icon/xinfeng-1.png');
+    transition: 1s;
+}
+.head > .nav .call li:nth-child(2) a:hover div> i{
+    background-image: url('img/head/icon/dianhua-1.png');
+    transition: 1s;
+}
+/* ************ */
+
+
+
+.my>li{
+	float: right;
+	margin-left: 20px;
+	margin-top: 3px;
+}
+.my>li>a{
+	color:#bfbfbf;
+}
+.my>li>a:hover{
+	color:#fff;
+	transition: 0.5s;
+}
+.right{
+	width: 4px;
+	height: 4px;
+	display: inline-block;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	transform:rotate(-45deg);
+	margin-bottom: 3px;
+	margin-left: 4px;
+}
