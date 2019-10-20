@@ -1,0 +1,136 @@
+.nav1{
+	height: 65px;;
+	background-color: #333333;
+	 position: relative;
+	
+}
+
+.nav1 > .center > .nav1-mune >.btn> button>i{
+	font-style: normal;
+}
+.nav1 > .center > .nav1-mune >.btn> button{
+	width:240px;
+	height: 65px;
+	padding: 15px 35px;
+	background-color: #73b320;
+	color:white;
+	border: none;
+	font-size: 18px;
+	line-height: 1.2;
+	outline: none;
+	/*display: block;*/
+	margin: 0;
+	font-weight: 600;
+	 margin-left: 350px;
+}
+.nav1 > .center > .nav1-mune .btn button:hover {
+	 background-color: #39b0ff;
+	  transition: background-color 1s;
+}
+.nav1 > .center > .nav1-mune >.area> .mune-ul{
+	display: inline-block;
+	 color: white;
+	 box-sizing: border-box;
+	 
+	  margin-left: 80px;
+	
+}
+.nav1 > .center > .nav1-mune   >.area> .mune-ul > li{
+	float: left;
+	padding:  20px;
+	position: relative;
+	 left: 500px;
+	 top: -65px;
+}
+.nav1 > .center > .nav1-mune  >.area >  .mune-ul > li:hover{
+	height: 25px;
+	background-color:#454545 ;
+	
+}
+.nav1 > .center > .nav1-mune >.area> .mune-ul > li a{
+	color:#fff;
+	position: relative;
+}
+.nav1 > .center > .nav1-mune  >.area> .mune-ul > li > a>i{
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	transform: rotate(45deg) translateY(-3px);
+	border-right:2px solid #bfbfbf;
+	border-bottom:2px solid #bfbfbf;
+	
+}
+.nav1 > .center > .nav1-mune  >.area> .mune-ul > li>ul{
+	position: absolute;
+    background-color:#262626;
+    width: 160px;
+    right: 0;
+    top: 60px;
+    display: none;
+    z-index: 20;
+}
+ .nav1 > .center > .nav1-mune  >.area> .mune-ul > li:hover ul{
+ 	display: block;
+ }
+.nav1 > .center > .nav1-mune  >.area> .mune-ul > li>ul li{
+	 width: 160px;
+    line-height: 2;
+    text-align: center;
+}
+.nav1 > .center > .nav1-mune  >.area> .mune-ul > li>ul a{
+	color: white;
+	font-size: 12px;
+}
+/****************************/
+.icon{
+	background-color: #73b320;
+	width: 100%;
+	height: 110px;
+}
+.icon .icon-area .icon-x{
+	 height: 80px;
+    display: inline-block;
+	
+}
+.icon .icon-area .icon-x div{
+	 display: inline-block;
+    vertical-align:bottom;
+    margin-left: 20px;
+}
+.icon .icon-area .icon-x div img{
+	width: 60px;
+    height: 60px;
+    position: relative;
+    top: 22px;
+}
+.icon .icon-area .icon-x h4{
+	color: #333333;
+	font-size: 15px;
+	margin-bottom: 0;
+    margin-top: 25px;
+	
+	
+}
+.icon .icon-area .icon-x div:nth-child(1){
+	vertical-align:bottom;
+}
+.icon .icon-area .icon-x div:nth-child(2){
+	 line-height: 40px;
+     padding-right: 55px;
+     padding-left: 5px;
+}
+.icon .icon-area .icon-x p{
+	color: white;
+	font-size: 13px;
+	/*position: relative;
+	top: -30px;*/
+	 margin-top: 0;
+    line-height: 6px;
+}
+.icon .icon-area .icon-x div>i{
+	display: block;
+   width:50px;
+   height: 50px;
+   background-repeat: no-repeat;
+   color: white;
+}
