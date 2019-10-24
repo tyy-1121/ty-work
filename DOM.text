@@ -1,25 +1,25 @@
 DOM 
 1.DOM概述
 1.DOM的概念
-  DOM文档对象模型，DOM对象不仅仅是一个普通的内置对象，它还是一个巨大的API的核心对象，他将文档的内容呈现在js前面，并赋予了js操作文档的能力。
+   DOM文档对象模型，DOM对象不仅仅是一个普通的内置对象，它还是一个巨大的API的核心对象，他将文档的内容呈现在js前面，并赋予了js操作文档的能力。
 2.DOM和JavaScript的关系
-一个web页面是一个文档，这文档可以在浏览器窗口或者作为HTML源代码显示出来。DOM能够使用JavaScript脚本语言进行修改。
+  一个web页面是一个文档，这文档可以在浏览器窗口或者作为HTML源代码显示出来。DOM能够使用JavaScript脚本语言进行修改。
 3.DOM节点
  根据w3c的html  DOM标准，html文档找那个的所有内容都是节点。
-> 整个文档都是一个文档节点
-> 每个html元素是元素节点
-> html元素内的文本是文本节点
-> 每个html属性都是属性节点
-> 注释也是节点，叫注释节点
+  整个文档都是一个文档节点
+  每个html元素是元素节点
+  html元素内的文本是文本节点
+  每个html属性都是属性节点
+  注释也是节点，叫注释节点
 4.DOM树
-DOM树有DOM文档树和DOM元素树两种，DOM元素树包含的只有元素节点，而DOM文档树则包括DOM文档中的所有内容。
+ DOM树有DOM文档树和DOM元素树两种，DOM元素树包含的只有元素节点，而DOM文档树则包括DOM文档中的所有内容。
 2.获取元素
 1.用id获取元素
-getElementById（）的方法，接受一个参数：获取元素的id，如果找到相应元素，则返回该元素，否则返回null，
+ getElementById（）的方法，
 var d = document.getElementById('d');
        console.log(d);
 2.用标签名获取元素
-getElementsByTagName（）可以获取元素名称下所有的元素，返回一个伪数组，
+ getElementsByTagName（）
        var lis = document.getElementsByTagName('li');
      console.log(lis);
 3.用类名获取元素
@@ -32,11 +32,11 @@ getElementsByTagName（）可以获取元素名称下所有的元素，返回一
       var a = document.getElementsByClassName('a');
       console.log(a);
 4.用name属性值获取元素
-getElementsByName()方法可以获取相同名称的name元素,返回一个伪数组对象.
+ getElementsByName()
 var sex = document.getElementsByName('sex');
         console.log(sex);
 5.用选择器获取元素
-querySelector()和querySelectorAll（）可以依靠选择器找到元素，但是前者只能找到元素列表的第一个元素，而后者可以全部找到
+ querySelector()和querySelectorAll（）可以依靠选择器找到元素，但是前者只能找到元素列表的第一个元素，而后者可以全部找到
 
 3获取和设置元素中的其他信息
 1.获取元素名
@@ -118,7 +118,7 @@ style.CSSText是一个css的样式集合，他可以把css层叠样式表中的c
        var mydiv =document.getElementById('mydiv');
        document.body.removeChild(mydiv);
 6.元素查找（node）
-节点是DOM树上的每一个节点，其中包括：元素、文本、属性、注释等
+  ***节点是DOM树上的每一个节点，其中包括：元素、文本、属性、注释等
 1.节点属性
    var mydiv = document.getElementById('mydiv');
         console.log(mydiv,nodeName)
@@ -127,7 +127,7 @@ style.CSSText是一个css的样式集合，他可以把css层叠样式表中的c
 2.层次节点
    节点可以分为：父节点与子节点、兄弟节点，当我们知道其中之的时候，可以用一些方法找到另一个
 3.获取所有子节点
-   使用childNodes属性拿到的是该元素下的所有节点，包含所有节点类型，不单单只是元素
+   使用childNodes属性拿到的是该元素下的所有节点
 
       <ul id="myul">
         <li>111</li>
@@ -164,7 +164,7 @@ style.CSSText是一个css的样式集合，他可以把css层叠样式表中的c
       console.log(mydiv.clientWidth)
 4.子元素与父元素的距离
    offsetLeft和offsetTop是距离body左边界和上边界的距离，但如果该子元素使用了定位属性，则offsetLeft和offsetTop参照的就不在是body而是距离它最近的父级元素
-<div id="baba">
+   <div id="baba">
         <div id="erzi"></div>
     </div>
         <script>
