@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../jquery/jquery.min.js"></script>
+    <style>
+      #b{
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          border-width: 3px;
+          border-color: #fff;
+          border-style: solid;
+          float: left;
+          /* position: absolute; */
+          box-shadow: 3px 3px 10px rgba(0,0,0,.6);
+          cursor: pointer;
+      }
+      #a1,#a2,#a3,#a4,#a5,#a6,#a7,#a8,#a9{
+        width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          border-width: 3px;
+          border-color: #fff;
+          border-style: solid;
+          float: left;
+          display: none;
+          box-shadow: 3px 3px 10px rgba(0,0,0,.6);
+      }
+      .a1{
+      	background-color: rgb(181, 105, 225);
+      }
+    </style>
+</head>
+<body>
+  
+    <div data-color="#e169c3" id="b" style="background-color: rgb(225, 105, 195);"></div>
+    <div data-color="#b569e1" id="a1" style="background-color: rgb(181, 105, 225);"></div>
+    <div data-color="#7169e1" id="a2" style="background-color: rgb(113, 105, 225);"></div>
+    <div data-color="#69b8e1" id="a3" style="background-color: rgb(105, 184, 225);"></div>
+    <div data-color="#69e1d4" id="a4" style="background-color: rgb(105, 225, 212);"></div>
+    <div data-color="#6ce169" id="a5" style="background-color: rgb(108, 225, 105);"></div>
+    <div data-color="#bee169" id="a6" style="background-color: rgb(190, 225, 105);"></div>
+    <div data-color="#e1a169" id="a7" style="background-color: rgb(225, 161, 105);"></div>
+    <div data-color="#83091d" id="a8" style="background-color: rgb(131, 9, 29);"></div>
+    <div data-color="#83091d" id="a9" style="background-color: rgb(131, 9, 29);"></div>
+    <script>
+    var c = 1;
+			$("#b").click(function(){
+            	if (c==1) {
+                   $("#a1,#a2,#a3,#a4,#a5,#a6,#a7,#a8,#a9").animate({width:'toggle'},350);
+		           a = false;
+	            } else if(c==2){
+		           $("#a1,#a2,#a3,#a4,#a5,#a6,#a7,#a8,#a9").animate({left:'250px'},350);
+		           a = true;
+	            }
+            })
+			 
+    </script>
+</body>
+</html>
