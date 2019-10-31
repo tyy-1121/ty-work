@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style></style>
+    <script src="jquery.min.js"></script>
+</head>
+
+<body>
+    <table >
+        <tr>
+            <td>名称</td>
+            <td>数量</td>
+            <td>单价</td>
+            <td>合计</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="" checked>
+                华为mate20
+            </td>
+
+            <td>
+                <button class="btn">+</button>
+                <span class="count">1</span>
+                <button class="reduce">-</button>
+            </td>
+
+            <td>
+                ￥<span class="price">3000.00</span>
+            </td>
+
+            <td>
+                ￥<span class="totally">3000.00</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="" checked>
+                小米8
+            </td>
+            <td>
+                <button class="btn">+</button>
+                <span class="count1">1</span>
+                <button class="reduce">-</button>
+            </td>
+            <td>
+                ￥<span class="price">5000.00</span>
+            </td>
+            <td>
+
+                ￥<span class="totally">5000.00</span>
+            </td>
+        </tr>
+
+    </table>
+            <span class="total">
+                合计：
+                共<b class="tnumber"></b>件商品
+                总价：￥<span>8000.00</span>
+            </span>
+    <script>
+        $('.btn').click(function () {
+            $(this).next().html(parseInt($(this).next().html()) + 1);
+            $(this).parent().siblings().children('.totally').html(((parseInt($(this).next().html()) + 1) * parseInt($(this).parent().siblings().children('.price').html())).toFixed(2));
+            var total = 0;
+            $('.totally').each(function () {
+                total += parseInt($(this).html());
+
+                $('.total span').html(total.toFixed(2));
+            });
+            
+            $(".tnumber").html(Number($(".count").html())+Number($(".count1").html()));
+        });
+        $('.reduce').click(function () {
+            var num = parseInt($(this).prev().html()) - 1;
+            if (num == 0) {
+                return;
+            } 
+            $(this).prev().html(num);
+            $(this).parent().siblings().children('.totally').html( (num * parseInt( $(this).parent().siblings().children('.price').html()).toFixed(2)).toFixed(2));
+            var total = 0;
+            $('.totally').each(function () {
+                var price = parseInt($(this).html());
+                total += price;
+                $('.total span').html(total.toFixed(2));
+            });
+            $(".tnumber").html(Number($(".count").html())+Number($(".count1").html()));
+        });
+        
+       
+    </script>
+</body>
+
+</html>
